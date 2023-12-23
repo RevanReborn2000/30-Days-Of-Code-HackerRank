@@ -1,0 +1,25 @@
+#!/bin/python3
+class Node:
+    def __init__(self,data):
+        self.data = data
+        self.next = None 
+class Solution: 
+    def display(self,head):
+        current = head
+        while current:
+            print(current.data,end=' ')
+            current = current.next
+
+    def insert(self,head,data):
+        if head == None:
+            head = Node(data)
+            return head
+        temp = head
+        while temp.next != None:
+            temp = temp.next
+        temp2 = Node(data)
+        temp.next = temp2
+        
+        return head
+
+mylist= Solution()

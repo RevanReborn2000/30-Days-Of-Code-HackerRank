@@ -1,0 +1,24 @@
+#!/bin/python3
+phoneBook = {}
+
+#no of entries
+n = int(input())
+
+def inPbook():
+    if name not in phoneBook:
+        print("Not found")
+    else:
+        print(name+'='+phoneBook[name])
+        
+
+for query in range(n):
+    key, value = input().split(maxsplit=1)
+    phoneBook[key] = value
+    
+while True:
+    try:
+        for query2 in range(n):
+            name = input()
+            inPbook()
+    except EOFError:
+        break
