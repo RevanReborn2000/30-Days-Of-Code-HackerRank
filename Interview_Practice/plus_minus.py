@@ -17,7 +17,7 @@ elements that are positive, negative, and zero.
 Print the decimal value of each fraction on a 
 new line with places after the decimal.
 '''
-# My Code below
+# My code below
 def plusMinus(arr):
     pos = 0
     neg = 0
@@ -30,7 +30,7 @@ def plusMinus(arr):
         else:
             zero += 1
     print(f"{pos / len(arr)}\n{neg / len(arr)}\n{zero / len(arr)}")   
-# My Code here above
+# My code above
 
 
 
